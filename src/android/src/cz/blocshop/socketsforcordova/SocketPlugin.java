@@ -157,6 +157,7 @@ public class SocketPlugin extends CordovaPlugin {
 	
 	private void dispatchEvent(JSONObject jsonEventObject) {
 		this.webView.sendJavascript(String.format("console.log(%s)", jsonEventObject.toString()));		
+		
 	}	
 	
 	private class CloseEventHandler implements Consumer<Boolean> {
