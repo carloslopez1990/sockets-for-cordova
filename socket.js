@@ -1,4 +1,3 @@
-cordova.define("cz.blocshop.socketsforcordova.Socket", function(require, exports, module) {
 var exec = require('cordova/exec');
 
 var SOCKET_EVENT = "SOCKET_EVENT";
@@ -213,5 +212,3 @@ if (navigator.userAgent.match(/iemobile/i)) {
 }
 
 module.exports = Socket;
-
-});
