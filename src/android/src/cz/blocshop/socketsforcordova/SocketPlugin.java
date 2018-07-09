@@ -35,7 +35,7 @@ public class SocketPlugin extends CordovaPlugin {
 		} else if (action.equals("setOptions")) {
 			this.setOptions(args, callbackContext);
 		} else if (action.equals("s0cread")) {  
-      this.s0cread(args, callbackContext);
+      		this.s0cread(args, callbackContext);
 		} else {
 			callbackContext.error(String.format("SocketPlugin - invalid action:", action));
 			return false;
@@ -45,7 +45,7 @@ public class SocketPlugin extends CordovaPlugin {
 	
 	private void s0cread(CordovaArgs args, CallbackContext callbackContext) throws JSONException {
 		String socketKey = args.getString(0);
-	  callbackContext.error( this.result );
+		callbackContext.success( this.result );
 	}
 	
 	private void open(CordovaArgs args, CallbackContext callbackContext) throws JSONException {
